@@ -164,6 +164,11 @@ img{display:block;max-width:100%;height:auto}
 
 
 .container{max-width:var(--max);margin:0 auto;padding:0 20px}
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
 
 
 .site-header{background:var(--muted);border-bottom:1px solid rgba(0,0,0,0.05)}
@@ -608,4 +613,39 @@ img{display:block;max-width:100%;height:auto}
   .circle-wrap{width:86px;height:86px;border-width:5px}
   .category h3{font-size:12px}
   .promo-list{gap:16px}
+
 }
+@media (max-width: 768px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+
