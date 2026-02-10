@@ -1,5 +1,7 @@
 # FoodHub - Food Delivery Application
 
+> **Note**: This project is built in the Akira-clothing repository. The repository name is historical and doesn't reflect the current application, which is a complete food delivery platform.
+
 A modern, responsive food delivery application built with React and Vite.
 
 ## Features

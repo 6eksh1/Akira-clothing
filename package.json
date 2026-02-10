@@ -1,7 +1,7 @@
 {
   "name": "akira-clothing",
   "version": "1.0.0",
-  "description": "",
+  "description": "FoodHub - A modern food delivery application built with React",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
