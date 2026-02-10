@@ -14,7 +14,7 @@ A modern, responsive food delivery application built with React, featuring login
 ## 📁 Project Structure
 
 ```
-Akira-clothing/
+foodexpress-app/
 ├── src/
 │   ├── components/
 │   │   ├── Navbar.jsx
@@ -51,6 +51,7 @@ Akira-clothing/
 ```bash
 git clone https://github.com/6eksh1/Akira-clothing.git
 cd Akira-clothing
+# Note: This repository hosts the FoodExpress application
 ```
 
 2. Install dependencies:
@@ -122,10 +123,10 @@ npm install --save-dev gh-pages
 }
 ```
 
-3. Update vite.config.js:
+3. Update vite.config.js (if deploying to GitHub Pages with custom base path):
 ```javascript
 export default defineConfig({
-  base: '/Akira-clothing/',
+  base: '/your-repo-name/',
   // ... rest of config
 })
 ```
