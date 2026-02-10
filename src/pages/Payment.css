@@ -1,0 +1,267 @@
+.payment-page {
+  min-height: calc(100vh - 70px);
+  padding: 3rem 0;
+  background: #f8f9fa;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--white);
+  border-radius: var(--border-radius);
+}
+
+.empty-cart h2 {
+  margin-bottom: 2rem;
+  color: var(--text-light);
+}
+
+.payment-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+}
+
+.payment-form-section {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.form-section {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--light-color);
+}
+
+.form-section:last-of-type {
+  border-bottom: none;
+}
+
+.form-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.payment-methods {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.payment-method-option {
+  flex: 1;
+  border: 2px solid var(--light-color);
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.payment-method-option:hover {
+  border-color: var(--primary-color);
+}
+
+.payment-method-option input[type="radio"] {
+  width: auto;
+  cursor: pointer;
+}
+
+.payment-method-option span {
+  font-weight: 600;
+}
+
+.card-details {
+  padding-top: 1rem;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 18px;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.order-summary {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 90px;
+  height: fit-content;
+}
+
+.order-summary h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+  border-bottom: 2px solid var(--light-color);
+  padding-bottom: 1rem;
+}
+
+.order-items {
+  margin-bottom: 1.5rem;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--light-color);
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.item-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-details h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: var(--text-dark);
+}
+
+.item-details p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.item-price {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.order-calculations {
+  border-top: 2px solid var(--light-color);
+  padding-top: 1rem;
+}
+
+.calculation-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.calculation-row.total {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--light-color);
+}
+
+.success-message {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.success-icon {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.success-message h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.success-message p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 992px) {
+  .payment-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .order-summary {
+    position: static;
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .payment-form-section {
+    padding: 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-methods {
+    flex-direction: column;
+  }
+
+  .success-message h1 {
+    font-size: 2rem;
+  }
+
+  .success-message p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-page {
+    padding: 1.5rem 0;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .payment-form-section,
+  .order-summary {
+    padding: 1rem;
+  }
+
+  .success-icon {
+    font-size: 3.5rem;
+  }
+
+  .success-message {
+    padding: 2rem 1rem;
+  }
+}
